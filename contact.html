@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오시는 길 - 첫번째교회</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">첫번째교회</a></h1>
+                <span class="logo-sub">First Church</span>
+            </div>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="메뉴 열기">&#9776;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="about.html">교회소개</a></li>
+                    <li><a href="sermons.html">예배/설교</a></li>
+                    <li><a href="events.html">교회소식</a></li>
+                    <li><a href="contact.html" class="active">오시는 길</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 페이지 배너 -->
+    <section class="page-banner">
+        <div class="hero-overlay"></div>
+        <div class="page-banner-content">
+            <h2>오시는 길</h2>
+            <p>첫번째교회를 방문해 주세요</p>
+        </div>
+    </section>
+
+    <!-- 지도 및 연락처 -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <p>지도 영역</p>
+                        <p class="map-address">서울특별시 강남구 테헤란로 123</p>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <h2>연락처</h2>
+                    <div class="contact-item">
+                        <h3>주소</h3>
+                        <p>서울특별시 강남구 테헤란로 123<br>첫번째교회</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>전화</h3>
+                        <p>02-1234-5678</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>이메일</h3>
+                        <p>info@firstchurch.kr</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>교회 사무실 운영시간</h3>
+                        <p>월~금: 오전 9:00 ~ 오후 6:00<br>토: 오전 9:00 ~ 오후 1:00<br>일: 예배 시간</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 교통편 안내 -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">교통편 안내</h2>
+            <div class="transport-grid">
+                <div class="transport-card">
+                    <h3>지하철</h3>
+                    <p>2호선 강남역 3번 출구에서 도보 5분</p>
+                </div>
+                <div class="transport-card">
+                    <h3>버스</h3>
+                    <p>간선: 140, 144, 145, 340<br>지선: 3412, 4412</p>
+                    <p>강남역 정류장 하차</p>
+                </div>
+                <div class="transport-card">
+                    <h3>자가용</h3>
+                    <p>교회 지하 주차장 이용 가능<br>(주일 주차 혼잡, 대중교통 권장)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 문의하기 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">문의하기</h2>
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">제목</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">내용</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">문의 보내기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>첫번째교회</h3>
+                    <p>주소: 서울특별시 강남구 테헤란로 123</p>
+                    <p>전화: 02-1234-5678</p>
+                    <p>이메일: info@firstchurch.kr</p>
+                </div>
+                <div class="footer-links">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="about.html">교회소개</a></li>
+                        <li><a href="sermons.html">예배/설교</a></li>
+                        <li><a href="events.html">교회소식</a></li>
+                        <li><a href="contact.html">오시는 길</a></li>
+                    </ul>
+                </div>
+                <div class="footer-worship">
+                    <h4>예배시간</h4>
+                    <p>주일예배: 오전 11:00</p>
+                    <p>수요예배: 오후 7:30</p>
+                    <p>새벽기도: 오전 5:30</p>
+                    <p>금요기도회: 오후 8:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 첫번째교회. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
