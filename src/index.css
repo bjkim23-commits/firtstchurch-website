@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #1B3A5C;
+    --color-primary-light: #2A5A8C;
+    --color-primary-dark: #0F2440;
+    --color-accent: #C8963E;
+    --color-accent-light: #E8C87A;
+    --color-warm: #FAFAF7;
+    --color-section: #F2F0EB;
+    --color-footer: #111827;
+    --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+    }
+}
