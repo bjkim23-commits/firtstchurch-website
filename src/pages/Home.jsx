@@ -14,7 +14,14 @@ const services = [
 const sermons = sermonsForHome()
 
 const news = [
-  { badge: '공지', bg: 'bg-[#1B3A5C]', title: '2026년 부활절 연합예배 안내', desc: '4월 5일(일) 오전 10시, 부활절 연합예배가 진행됩니다.', date: '2026.03.20', img: 'https://images.unsplash.com/photo-1519491050282-cf00e2cb4eb6?w=800&q=80' },
+  {
+    badge: '공지',
+    bg: 'bg-[#1B3A5C]',
+    title: '2026년 부활절 연합예배 안내',
+    desc: '4월 5일(일) 오전 10시, 부활절 연합예배가 진행됩니다.',
+    date: '2026.03.20',
+    img: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80',
+  },
   { badge: '행사', bg: 'bg-[#C8963E]', title: '봄 성경학교 참가자 모집', desc: '4월 중 어린이 봄 성경학교를 진행합니다.', date: '2026.03.18', img: 'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80' },
   { badge: '새가족', bg: 'bg-[#2A5A8C]', title: '새가족 등록 안내', desc: '처음 방문하신 분들을 환영합니다.', date: '2026.03.15', img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80' },
 ]
@@ -104,8 +111,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {news.map((item, i) => (
               <div key={i} className="border border-gray-200 rounded-xl overflow-hidden transition-all hover:border-transparent hover:shadow-[0_4px_40px_rgba(0,0,0,0.06)] hover:-translate-y-0.5">
-                <div className="h-44 overflow-hidden">
-                  <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+                <div className="h-44 overflow-hidden bg-gradient-to-br from-[#0F2440] via-[#1B3A5C] to-[#C8963E]/50">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                    onError={e => {
+                      e.currentTarget.style.display = 'none'
+                    }}
+                  />
                 </div>
                 <div className="p-6">
                   <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold text-white mb-3 ${item.bg}`}>{item.badge}</span>
