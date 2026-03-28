@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Sun, Music, Moon, Heart, BookOpen, PlayCircle, ChevronRight } from 'lucide-react'
+import { sermonsForHome } from '../data/sundaySermons'
 
 const HERO_IMG = 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1920&q=80'
 
@@ -10,11 +11,7 @@ const services = [
   { icon: Heart, title: '금요기도회', time: '매주 금요일 오후 8:00', location: '본당' },
 ]
 
-const sermons = [
-  { date: '2026.03.22', title: '믿음으로 나아가는 삶', verse: '히브리서 11:1-6 | 강상석 담임목사' },
-  { date: '2026.03.15', title: '사랑의 능력', verse: '고린도전서 13:1-13 | 강상석 담임목사' },
-  { date: '2026.03.08', title: '새로운 시작', verse: '이사야 43:18-19 | 강상석 담임목사' },
-]
+const sermons = sermonsForHome()
 
 const news = [
   { badge: '공지', bg: 'bg-[#1B3A5C]', title: '2026년 부활절 연합예배 안내', desc: '4월 5일(일) 오전 10시, 부활절 연합예배가 진행됩니다.', date: '2026.03.20', img: 'https://images.unsplash.com/photo-1519491050282-cf00e2cb4eb6?w=800&q=80' },
@@ -74,14 +71,21 @@ export default function Home() {
           <p className="text-center text-gray-500 mb-16">생명의 말씀을 들으실 수 있습니다</p>
           <div className="max-w-[720px] mx-auto">
             {sermons.map((s, i) => (
-              <div key={i} className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 ${i < sermons.length - 1 ? 'border-b border-gray-200' : ''}`}>
+              <a
+                key={`${s.date}-${s.title}`}
+                href={s.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`유튜브에서 설교 보기: ${s.title}`}
+                className={`group flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 text-inherit no-underline rounded-lg -mx-2 px-2 transition-colors hover:bg-[#F0EDE6]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3A5C] ${i < sermons.length - 1 ? 'border-b border-gray-200' : ''}`}
+              >
                 <span className="flex-shrink-0 text-sm font-semibold text-[#1B3A5C] min-w-[100px]">{s.date}</span>
-                <div className="flex-1">
-                  <h3 className="font-semibold text-base mb-1">{s.title}</h3>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-semibold text-base mb-1 group-hover:text-[#2A5A8C]">{s.title}</h3>
                   <p className="text-sm text-gray-500">{s.verse}</p>
                 </div>
-                <PlayCircle size={18} className="hidden sm:block text-gray-300 flex-shrink-0" />
-              </div>
+                <PlayCircle size={18} className="hidden sm:block text-[#C8963E] flex-shrink-0" aria-hidden />
+              </a>
             ))}
           </div>
           <div className="text-center mt-12">

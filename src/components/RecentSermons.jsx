@@ -1,20 +1,7 @@
-const sermons = [
-  {
-    date: '2026.03.22',
-    title: '믿음으로 나아가는 삶',
-    verse: '히브리서 11:1-6 | 강상석 담임목사',
-  },
-  {
-    date: '2026.03.15',
-    title: '사랑의 능력',
-    verse: '고린도전서 13:1-13 | 강상석 담임목사',
-  },
-  {
-    date: '2026.03.08',
-    title: '새로운 시작',
-    verse: '이사야 43:18-19 | 강상석 담임목사',
-  },
-]
+import { Link } from 'react-router-dom'
+import { sermonsForHome } from '../data/sundaySermons'
+
+const sermons = sermonsForHome()
 
 export default function RecentSermons() {
   return (
@@ -29,26 +16,30 @@ export default function RecentSermons() {
 
         <div className="max-w-[720px] mx-auto">
           {sermons.map((s, i) => (
-            <div
-              key={i}
-              className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 ${
+            <a
+              key={`${s.date}-${s.title}`}
+              href={s.youtubeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`유튜브에서 설교 보기: ${s.title}`}
+              className={`flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6 py-6 text-inherit no-underline rounded-lg -mx-2 px-2 transition-colors hover:bg-stone-100/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                 i < sermons.length - 1 ? 'border-b border-gray-200' : ''
               }`}
             >
               <span className="flex-shrink-0 text-sm font-semibold text-primary min-w-[100px]">
                 {s.date}
               </span>
-              <div>
+              <div className="min-w-0 flex-1">
                 <h3 className="font-semibold text-base mb-1">{s.title}</h3>
                 <p className="text-sm text-gray-500">{s.verse}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <a
-            href="#"
+          <Link
+            to="/sunday-sermon"
             className="inline-flex items-center text-sm font-semibold text-primary hover:text-primary-light transition-colors group"
           >
             설교 더보기
@@ -60,7 +51,7 @@ export default function RecentSermons() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

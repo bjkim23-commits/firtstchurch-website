@@ -1,14 +1,6 @@
 import PageBanner from '../components/PageBanner'
 import { PlayCircle } from 'lucide-react'
-
-const sermons = [
-  { date: '2026.03.22', title: '믿음으로 나아가는 삶', verse: '히브리서 11:1-6', tag: '주일예배' },
-  { date: '2026.03.15', title: '사랑의 능력', verse: '고린도전서 13:1-13', tag: '주일예배' },
-  { date: '2026.03.08', title: '새로운 시작', verse: '이사야 43:18-19', tag: '주일예배' },
-  { date: '2026.03.01', title: '감사의 삶', verse: '데살로니가전서 5:16-18', tag: '주일예배' },
-  { date: '2026.02.22', title: '하나님의 인도하심', verse: '시편 23:1-6', tag: '주일예배' },
-  { date: '2026.02.15', title: '주의 말씀은 내 발의 등', verse: '시편 119:105-112', tag: '주일예배' },
-]
+import { sundaySermons } from '../data/sundaySermons'
 
 export default function SundaySermon() {
   return (
@@ -17,8 +9,15 @@ export default function SundaySermon() {
       <section className="py-24">
         <div className="max-w-[800px] mx-auto px-6">
           <div className="space-y-0">
-            {sermons.map((s, i) => (
-              <div key={i} className="flex items-center gap-5 py-5 border-b border-gray-100 hover:bg-[#FAFAF7] -mx-4 px-4 rounded-lg transition-colors cursor-pointer group">
+            {sundaySermons.map(s => (
+              <a
+                key={`${s.date}-${s.title}`}
+                href={s.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`유튜브에서 설교 보기: ${s.title}`}
+                className="flex items-center gap-5 py-5 border-b border-gray-100 hover:bg-[#FAFAF7] -mx-4 px-4 rounded-lg transition-colors cursor-pointer group text-inherit no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B3A5C]"
+              >
                 <div className="w-10 h-10 bg-[#1B3A5C]/[0.06] rounded-full flex items-center justify-center text-[#1B3A5C] flex-shrink-0 group-hover:bg-[#1B3A5C] group-hover:text-white transition-colors">
                   <PlayCircle size={18} />
                 </div>
@@ -30,7 +29,7 @@ export default function SundaySermon() {
                   <span className="text-sm font-medium text-[#1B3A5C]">{s.date}</span>
                   <span className="block text-xs text-[#C8963E] mt-0.5">{s.tag}</span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
