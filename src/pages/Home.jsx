@@ -20,7 +20,7 @@ const news = [
     title: '2026년 부활절 연합예배 안내',
     desc: '4월 5일(일) 오전 10시, 부활절 연합예배가 진행됩니다.',
     date: '2026.03.20',
-    img: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80',
+    img: '/images/easter-news-2026.jpg',
   },
   { badge: '행사', bg: 'bg-[#C8963E]', title: '봄 성경학교 참가자 모집', desc: '4월 중 어린이 봄 성경학교를 진행합니다.', date: '2026.03.18', img: 'https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80' },
   { badge: '새가족', bg: 'bg-[#2A5A8C]', title: '새가족 등록 안내', desc: '처음 방문하신 분들을 환영합니다.', date: '2026.03.15', img: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80' },
