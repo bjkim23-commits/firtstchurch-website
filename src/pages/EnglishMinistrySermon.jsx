@@ -2,6 +2,18 @@ import PageBanner from '../components/PageBanner'
 import { PlayCircle } from 'lucide-react'
 
 const items = [
+  { date: '2026.06.28', title: 'Standing Firm in the Lord', verse: 'Philippians 4:1-9' },
+  { date: '2026.06.21', title: 'Grace Sufficient', verse: '2 Corinthians 12:9-10' },
+  { date: '2026.06.14', title: 'Clothed with Love', verse: 'Colossians 3:12-17' },
+  { date: '2026.06.07', title: 'The Spirit of Adoption', verse: 'Romans 8:14-17' },
+  { date: '2026.05.31', title: 'Come, Holy Spirit', verse: 'Acts 2:1-13' },
+  { date: '2026.05.24', title: 'Abiding in the Vine', verse: 'John 15:4-11' },
+  { date: '2026.05.17', title: 'From Fear to Faith', verse: 'John 14:27' },
+  { date: '2026.05.10', title: 'A Mother\'s Faith', verse: '2 Timothy 1:5' },
+  { date: '2026.05.03', title: 'Living as Children of Light', verse: 'Ephesians 5:8-14' },
+  { date: '2026.04.26', title: 'Hope That Does Not Disappoint', verse: 'Romans 5:1-5' },
+  { date: '2026.04.19', title: 'Resurrection Life', verse: 'John 11:25-26' },
+  { date: '2026.04.12', title: 'He Is Risen', verse: 'Luke 24:1-12' },
   { date: '2026.03.22', title: 'Walking by Faith', verse: 'Hebrews 11:1-6' },
   { date: '2026.03.15', title: 'The Power of Love', verse: '1 Corinthians 13:1-13' },
   { date: '2026.03.08', title: 'A New Beginning', verse: 'Isaiah 43:18-19' },

@@ -7,6 +7,34 @@ const YT = id => `https://www.youtube.com/watch?v=${id}`
 
 export const sundaySermons = [
   {
+    date: '2026.06.28',
+    title: '"참된 안식"',
+    verse: '마태복음 11:28-30',
+    tag: '주일예배',
+    youtubeUrl: 'https://www.youtube.com/@THEFIRSTTHEBEST',
+  },
+  {
+    date: '2026.06.21',
+    title: '"성령의 인도하심"',
+    verse: '로마서 8:14-17',
+    tag: '주일예배',
+    youtubeUrl: 'https://www.youtube.com/@THEFIRSTTHEBEST',
+  },
+  {
+    date: '2026.06.14',
+    title: '"사랑 안에서 자라가라"',
+    verse: '에베소서 4:15-16',
+    tag: '주일예배',
+    youtubeUrl: 'https://www.youtube.com/@THEFIRSTTHEBEST',
+  },
+  {
+    date: '2026.06.07',
+    title: '"오순절과 성령"',
+    verse: '사도행전 2:1-13',
+    tag: '주일예배',
+    youtubeUrl: 'https://www.youtube.com/@THEFIRSTTHEBEST',
+  },
+  {
     date: '2026.05.24',
     title: '"예수님이 생명을 주십니다"',
     verse: '요한복음 5:19-30',

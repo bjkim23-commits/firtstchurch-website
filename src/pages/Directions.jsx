@@ -8,11 +8,18 @@ export default function Directions() {
       <section className="py-24">
         <div className="max-w-[1080px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Map Placeholder */}
-            <div className="bg-[#F2F0EB] rounded-xl h-[400px] flex flex-col items-center justify-center text-gray-400">
-              <MapPin size={48} className="mb-4 text-[#C8963E]" />
-              <p className="font-medium">지도 영역</p>
-              <p className="text-sm mt-2">2681 JFK Blvd, Jersey City, NJ 07306</p>
+            {/* Google Maps Embed */}
+            <div className="rounded-xl overflow-hidden h-[400px] border border-gray-200">
+              <iframe
+                title="교회 위치"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.277!2d-74.0666!3d40.7282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c257c4b5e0c0c3%3A0x1!2s2681+John+F+Kennedy+Blvd%2C+Jersey+City%2C+NJ+07306!5e0!3m2!1sko!2sus!4v1"
+              />
             </div>
 
             {/* Contact Info */}
