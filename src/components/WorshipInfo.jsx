@@ -6,7 +6,7 @@ const services = [
       </svg>
     ),
     title: '주일예배',
-    time: '매주 일요일 오전 11:00',
+    time: '1부 오전 9:00 · 2부 오전 10:30',
     location: '본당',
   },
   {
@@ -16,18 +16,8 @@ const services = [
       </svg>
     ),
     title: '수요찬양기도회',
-    time: '매주 수요일 오후 7:30',
+    time: '매주 수요일 오후 8:00',
     location: '본당',
-  },
-  {
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-      </svg>
-    ),
-    title: '토요새벽기도회',
-    time: '매주 토요일 오전 6:00',
-    location: '소예배실',
   },
   {
     icon: (
@@ -52,7 +42,7 @@ export default function WorshipInfo() {
           함께 예배하며 하나님을 만나는 시간
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s) => (
             <div
               key={s.title}

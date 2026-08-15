@@ -45,7 +45,7 @@ Font is **Pretendard Variable** (loaded externally), falling back to system UI. 
 ### Route groups (from `App.jsx` comments)
 
 - 교회소개 (Church Info): `/about`, `/pastor`, `/staff`, `/new-family`, `/directions`
-- 예배와말씀 (Worship): `/worship`, `/sunday-sermon`, `/wednesday-prayer`, `/saturday-prayer`, `/english-sermon`
+- 예배와말씀 (Worship): `/worship`, `/sunday-sermon`, `/wednesday-prayer`, `/english-sermon`
 - 다음세대 (Next Generation): `/nursery`, `/elementary`, `/korean-youth`, `/english-ministry`, `/korean-school`
 - 나눔터 (Community): `/prayer-request`, `/new-family-intro`, `/gallery`, `/bulletin`
 - 회원 (Members): `/login`, `/register`

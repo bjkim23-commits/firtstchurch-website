@@ -25,7 +25,7 @@ export default function EnglishMinistrySermon() {
       <PageBanner title="English Ministry" subtitle="Sunday Worship Sermons" />
       <section className="py-24">
         <div className="max-w-[800px] mx-auto px-6">
-          <p className="text-center text-gray-500 mb-12">Join us for worship in English every Sunday at 11:00 AM.</p>
+          <p className="text-center text-gray-500 mb-12">Join us for worship in English every Sunday at 10:30 AM.</p>
           {items.map((s, i) => (
             <div key={i} className="flex items-center gap-5 py-5 border-b border-gray-100 hover:bg-[#FAFAF7] -mx-4 px-4 rounded-lg transition-colors cursor-pointer">
               <div className="w-10 h-10 bg-[#2A5A8C]/[0.08] rounded-full flex items-center justify-center text-[#2A5A8C] flex-shrink-0"><PlayCircle size={18} /></div>

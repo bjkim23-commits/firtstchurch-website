@@ -35,6 +35,13 @@ export const sundaySermons = [
     youtubeUrl: 'https://www.youtube.com/@THEFIRSTTHEBEST',
   },
   {
+    date: '2026.05.31',
+    title: '"예수님을 위한 증거" "Witnesses to Jesus"',
+    verse: '요한복음(John) 5:31-47 (신약 N.T. p.151)',
+    tag: '주일예배',
+    youtubeUrl: YT('Xzdsv4wX_20'),
+  },
+  {
     date: '2026.05.24',
     title: '"예수님이 생명을 주십니다"',
     verse: '요한복음 5:19-30',

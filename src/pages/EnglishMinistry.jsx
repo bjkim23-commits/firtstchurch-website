@@ -9,7 +9,7 @@ export default function EnglishMinistry() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-16">
             {[
-              { icon: Clock, label: 'Worship', value: 'Sunday 11:00 AM' },
+              { icon: Clock, label: 'Worship', value: 'Sunday 10:30 AM' },
               { icon: MapPin, label: 'Location', value: '2nd Floor Chapel' },
               { icon: Users, label: 'For', value: 'English Speakers' },
             ].map(item => {

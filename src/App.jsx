@@ -9,7 +9,6 @@ import Directions from './pages/Directions'
 import WorshipGuide from './pages/WorshipGuide'
 import SundaySermon from './pages/SundaySermon'
 import WednesdayPrayer from './pages/WednesdayPrayer'
-import SaturdayPrayer from './pages/SaturdayPrayer'
 import EnglishMinistrySermon from './pages/EnglishMinistrySermon'
 import Nursery from './pages/Nursery'
 import Elementary from './pages/Elementary'
@@ -38,7 +37,6 @@ export default function App() {
         <Route path="worship" element={<WorshipGuide />} />
         <Route path="sunday-sermon" element={<SundaySermon />} />
         <Route path="wednesday-prayer" element={<WednesdayPrayer />} />
-        <Route path="saturday-prayer" element={<SaturdayPrayer />} />
         <Route path="english-sermon" element={<EnglishMinistrySermon />} />
         {/* 다음세대 */}
         <Route path="nursery" element={<Nursery />} />

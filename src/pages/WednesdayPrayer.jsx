@@ -25,7 +25,7 @@ const items = [
 export default function WednesdayPrayer() {
   return (
     <>
-      <PageBanner title="수요찬양기도회" subtitle="매주 수요일 오후 7:30" />
+      <PageBanner title="수요찬양기도회" subtitle="매주 수요일 오후 8:00" />
       <section className="py-24">
         <div className="max-w-[800px] mx-auto px-6">
           <p className="text-center text-gray-500 mb-12">찬양과 기도로 하나님께 나아가는 시간입니다.</p>

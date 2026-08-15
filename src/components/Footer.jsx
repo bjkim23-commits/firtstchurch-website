@@ -45,9 +45,9 @@ export default function Footer() {
           <div>
             <h4 className="text-white/80 font-semibold text-sm mb-4">예배시간</h4>
             <div className="space-y-1.5 text-sm">
-              <p>주일예배: 오전 11:00</p>
-              <p>수요찬양기도회: 오후 7:30</p>
-              <p>토요새벽기도회: 오전 6:00</p>
+              <p>주일예배 1부: 오전 9:00</p>
+              <p>주일예배 2부: 오전 10:30</p>
+              <p>수요찬양기도회: 오후 8:00</p>
               <p>금요기도회: 오후 8:00</p>
             </div>
           </div>

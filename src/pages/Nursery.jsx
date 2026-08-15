@@ -9,7 +9,7 @@ export default function Nursery() {
         <div className="max-w-[800px] mx-auto px-6">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-16">
             {[
-              { icon: Clock, label: '예배시간', value: '주일 오전 11:00' },
+              { icon: Clock, label: '예배시간', value: '주일 오전 9:00 · 10:30' },
               { icon: MapPin, label: '장소', value: '교육관 1층' },
               { icon: Users, label: '대상', value: '영아~5세' },
             ].map(item => {

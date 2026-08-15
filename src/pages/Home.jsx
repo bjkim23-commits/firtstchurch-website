@@ -1,13 +1,10 @@
 import { Link } from 'react-router-dom'
-import { Sun, Music, Moon, Heart, BookOpen, PlayCircle, ChevronRight } from 'lucide-react'
+import { Sun, Music, Heart, BookOpen, PlayCircle, ChevronRight } from 'lucide-react'
 import { sermonsForHome } from '../data/sundaySermons'
 
-const HERO_IMG = 'https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1920&q=80'
-
 const services = [
-  { icon: Sun, title: '주일예배', time: '매주 일요일 오전 11:00', location: '본당' },
-  { icon: Music, title: '수요찬양기도회', time: '매주 수요일 오후 7:30', location: '본당' },
-  { icon: Moon, title: '토요새벽기도회', time: '매주 토요일 오전 6:00', location: '소예배실' },
+  { icon: Sun, title: '주일예배', time: '1부 오전 9:00 · 2부 오전 10:30', location: '본당' },
+  { icon: Music, title: '수요찬양기도회', time: '매주 수요일 오후 8:00', location: '본당' },
   { icon: Heart, title: '금요기도회', time: '매주 금요일 오후 8:00', location: '본당' },
 ]
 
@@ -30,10 +27,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
-        <img src={HERO_IMG} alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0F2440]/90 via-[#1B3A5C]/80 to-[#2A5A8C]/70" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_80%,rgba(200,150,62,0.15)_0%,transparent_50%)]" />
+      <section className="relative min-h-[85vh] flex items-center justify-center text-center text-white overflow-hidden bg-[#1B3A5C] bg-gradient-to-b from-[#152d48] to-[#1B3A5C]">
         <div className="relative z-10 max-w-[680px] px-6">
           <h2 className="text-4xl md:text-5xl font-bold leading-[1.25] tracking-tight mb-5">하나님의 사랑으로<br />세상을 품는 교회</h2>
           <p className="text-lg md:text-xl font-light opacity-80 mb-10">뉴저지제일한인교회에 오신 것을 환영합니다</p>
@@ -53,7 +47,7 @@ export default function Home() {
         <div className="max-w-[1080px] mx-auto px-6">
           <h2 className="text-center text-2xl md:text-3xl font-bold tracking-tight mb-4">예배 안내</h2>
           <p className="text-center text-gray-500 mb-16">함께 예배하며 하나님을 만나는 시간</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map(s => {
               const Icon = s.icon
               return (

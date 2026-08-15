@@ -86,9 +86,8 @@ const navItems = [
   { label: "오시는 길", href: "#contact" },
 ];
 const services = [
-  { Icon: Icon.Sun,   title: "주일예배",       time: "매주 일요일 오전 11:00", location: "본당" },
-  { Icon: Icon.Music, title: "수요찬양기도회",  time: "매주 수요일 오후 7:30",  location: "본당" },
-  { Icon: Icon.Moon,  title: "토요새벽기도회",  time: "매주 토요일 오전 6:00",  location: "소예배실" },
+  { Icon: Icon.Sun,   title: "주일예배",       time: "1부 오전 9:00 · 2부 오전 10:30", location: "본당" },
+  { Icon: Icon.Music, title: "수요찬양기도회",  time: "매주 수요일 오후 8:00",  location: "본당" },
   { Icon: Icon.Heart, title: "금요기도회",      time: "매주 금요일 오후 8:00",  location: "본당" },
 ];
 const sermons = [
@@ -157,7 +156,7 @@ function WorshipInfo() {
       <div style={{ maxWidth:1080, margin:"0 auto", padding:"0 24px" }}>
         <h2 style={{ textAlign:"center", fontSize:28, fontWeight:700, letterSpacing:"-0.03em", marginBottom:12 }}>예배 안내</h2>
         <p style={{ textAlign:"center", color:"#6E6E73", marginBottom:56 }}>함께 예배하며 하나님을 만나는 시간</p>
-        <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:20 }}>
+        <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:20 }}>
           {services.map(s => (
             <div key={s.title} style={{ border:"1px solid #E5E5EA", borderRadius:12, padding:"32px 20px", textAlign:"center", transition:"all 0.3s", cursor:"pointer" }}
               onMouseEnter={e => { e.currentTarget.style.boxShadow="0 4px 40px rgba(0,0,0,0.07)"; e.currentTarget.style.transform="translateY(-4px)"; e.currentTarget.style.borderColor="transparent"; }}
@@ -271,9 +270,9 @@ function Footer() {
               <span style={{ color:"#C8963E" }}><Icon.Clock /></span>예배시간
             </div>
             <div style={{ display:"flex", flexDirection:"column", gap:6, fontSize:13 }}>
-              <span>주일예배: 오전 11:00</span>
-              <span>수요찬양기도회: 오후 7:30</span>
-              <span>토요새벽기도회: 오전 6:00</span>
+              <span>주일예배 1부: 오전 9:00</span>
+              <span>주일예배 2부: 오전 10:30</span>
+              <span>수요찬양기도회: 오후 8:00</span>
               <span>금요기도회: 오후 8:00</span>
             </div>
           </div>

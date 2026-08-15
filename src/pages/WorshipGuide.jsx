@@ -1,12 +1,12 @@
 import PageBanner from '../components/PageBanner'
 
 const worshipTimes = [
-  { name: '주일예배', time: '일요일 오전 11:00', place: '본당', target: '전 성도' },
-  { name: '주일학교', time: '일요일 오전 11:00', place: '교육관', target: '유치부~중고등부' },
-  { name: '수요찬양기도회', time: '수요일 오후 7:30', place: '본당', target: '전 성도' },
-  { name: '토요새벽기도회', time: '토요일 오전 6:00', place: '소예배실', target: '전 성도' },
+  { name: '주일예배 1부', time: '일요일 오전 9:00', place: '본당', target: '전 성도' },
+  { name: '주일예배 2부', time: '일요일 오전 10:30', place: '본당', target: '전 성도' },
+  { name: '주일학교', time: '일요일 오전 10:30', place: '교육관', target: '유치부~중고등부' },
+  { name: '수요찬양기도회', time: '수요일 오후 8:00', place: '본당', target: '전 성도' },
   { name: '금요기도회', time: '금요일 오후 8:00', place: '본당', target: '전 성도' },
-  { name: 'English Ministry', time: '일요일 오전 11:00', place: '2층 예배실', target: '영어권 성도' },
+  { name: 'English Ministry', time: '일요일 오전 10:30', place: '2층 예배실', target: '영어권 성도' },
 ]
 
 export default function WorshipGuide() {

@@ -20,7 +20,6 @@ const NAV = [
       { label: '예배안내', to: '/worship' },
       { label: '주일설교', to: '/sunday-sermon' },
       { label: '수요찬양기도회', to: '/wednesday-prayer' },
-      { label: '토요새벽기도회', to: '/saturday-prayer' },
       { label: 'English Ministry', to: '/english-sermon' },
     ],
   },
@@ -168,9 +167,9 @@ function Footer() {
               <Clock size={14} className="text-[#C8963E]" /> 예배시간
             </h4>
             <div className="space-y-1.5 text-sm">
-              <p>주일예배: 오전 11:00</p>
-              <p>수요찬양: 오후 7:30</p>
-              <p>토요새벽: 오전 6:00</p>
+              <p>주일예배 1부: 오전 9:00</p>
+              <p>주일예배 2부: 오전 10:30</p>
+              <p>수요찬양기도회: 오후 8:00</p>
               <p>금요기도: 오후 8:00</p>
             </div>
           </div>
